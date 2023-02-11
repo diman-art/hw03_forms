@@ -19,7 +19,7 @@ def pagination(request, post_list, count_post=TEN):
 
 
 def index(request):
-    post_list = Post.objects.select_related('author','group')
+    post_list = Post.objects.select_related('author', 'group')
     page_obj = pagination(request, post_list, TEN)
     context = {
         'page_obj': page_obj,
