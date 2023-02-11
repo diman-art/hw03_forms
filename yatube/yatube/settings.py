@@ -135,3 +135,5 @@ LOGIN_REDIRECT_URL = 'posts:home'
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
+
+TEN: int = 10
