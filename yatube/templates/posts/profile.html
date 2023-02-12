@@ -10,6 +10,5 @@
     {% for post in page_obj %}
     {% include 'includes/post.html' %}
     {% if not forlop.last %}<hr>{% endif %}
-    {% empty %}<p>В группе нет постов</p>{% endfor %}
     {% include 'includes/paginator.html' %}          
 {% endblock %}
