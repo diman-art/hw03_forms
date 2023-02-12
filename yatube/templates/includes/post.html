@@ -9,7 +9,7 @@
 </ul>
 <p>{{ post.text }}</p>  
 <a href="{% url 'posts:post_detail' post.id %}">подробная информация<br> </a>
-{% if post.group %}
+{% if post.group and not group %}
   <a href="{% url 'posts:group' post.group.slug %}"<br>все записи группы</a>
 {% endif %}
 </article>
